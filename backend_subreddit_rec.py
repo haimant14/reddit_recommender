@@ -23,7 +23,7 @@ def get_value(prompt, df= subreddit_clust): # gennerates input
             print("Sorry, your entry is not valid.")
             continue
         if value not in list(df.index):
-            print("Sorry, could you please use the following the given list?", random.choices(df.index, k=10))
+            print("Sorry,could not find a subreddit of your choice.Try again or you can choose from the following subreddits?", random.choices(df.index, k=10))
             continue
         else:
             break
