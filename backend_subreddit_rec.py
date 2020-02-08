@@ -38,4 +38,4 @@ name_.append(get_value("Your third entry is: "))
 
 
 
-print('recomended subreddits are as follows: ',recommend_util(name_))
+print('Based on your choices your recommended subreddits are as follows: ',recommend_util(name_))
