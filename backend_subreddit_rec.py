@@ -18,12 +18,12 @@ def recommend_util(input_, df = subreddit_clust): # returns 5 recomendations fro
 def get_value(prompt, df= subreddit_clust): # gennerates input
     while True:
         try:
-            value = str(input(prompt))
+            value = str(input(prompt)).lower()
         except ValueError:
             print("Sorry, your entry is not valid.")
             continue
         if value not in list(df.index):
-            print("Sorry, your response must be in the given list.")
+            print("Sorry, could you please use the following the given list?", random.choices(df.index, k=10))
             continue
         else:
             break
