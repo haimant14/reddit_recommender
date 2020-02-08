@@ -30,7 +30,7 @@ def get_value(prompt, df= subreddit_clust): # gennerates input
     return value
 
 name_ =[]
-name_.append(get_value("Your first entry is: "))
+name_.append(get_value("Choose 3 subreddits you like and we would make a few recommendations you might like.Your first entry is: "))
 name_.append(get_value("Your second entry is: "))
 name_.append(get_value("Your third entry is: "))
 # list_ = [] # placeholder for the imput. 
