@@ -18,7 +18,7 @@ def recommend_util(input_, df = subreddit_clust): # returns 5 recomendations fro
 def get_value(prompt, df= subreddit_clust): # gennerates input
     while True:
         try:
-            value = str(input(prompt)).lower()
+            value = str(input(prompt)).lower().strip()
         except ValueError:
             print("Sorry, your entry is not valid.")
             continue
